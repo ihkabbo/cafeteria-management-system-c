@@ -1,103 +1,149 @@
-# 🍽️ Cafeteria Management System (C)
+# Cafeteria Management System
 
-## 📌 Overview
+A C-based Cafeteria Management System that manages food menus, student accounts, shopping carts, and order processing using fundamental data structures.
 
-The Cafeteria Management System is a console-based application developed using the C programming language.
+## Project Overview
 
-The system is designed to manage cafeteria food items, student interactions, and order processing. It uses fundamental data structures such as Linked Lists, Stacks, and Queues, along with file handling to store and retrieve information.
+This project is developed using the C programming language as part of the Data Structure Lab (CSE-206) course.
 
-It provides separate functionalities for administrators and students.
+The system simulates a cafeteria environment with two types of users: administrators and students.
 
-## ✨ Features
+It uses Linked Lists to manage food items, Stacks to implement the shopping cart, and Queues to process customer orders. File handling is also used to store menu information, user credentials, and order history.
 
-### 👨‍💼 Admin Module
-- Admin registration and login
-- Add food items to the menu
-- View available food items
-- Delete food items
-- View customer orders
-- Serve orders
+## Features
 
-### 🎓 Student Module
-- Student registration and login
-- View food menus
-- Select food categories
-- Add items to cart
-- Undo the last cart action
-- Remove items from cart
-- View cart and calculate total price
-- Place food orders
+- Separate admin and student modules.
+- Admin registration and login.
+- Student registration and login.
+- Add food items to different categories.
+- View available food items.
+- Delete food items from the menu.
+- Manage three food categories: Breakfast, Lunch, and Snacks.
+- Add food items to a shopping cart.
+- Undo the last cart action.
+- Remove specific items from the cart.
+- View cart items and calculate the total price.
+- Place food orders.
+- View pending customer orders.
+- Serve orders in FIFO order.
+- Store and retrieve information using text files.
 
-## 🛠️ Technologies Used
+## User Modules
 
-- **Programming Language:** C
-- **Data Structures:** Linked List, Stack, Queue
-- **File Handling:** Text file storage
-- **Development Environment:** CodeBlocks
-- **Operating System:** Windows
+### Admin Module
 
-## 🧠 Data Structures Implemented
+- Register and log in as an administrator.
+- Add food items with quantity and price.
+- View food menus.
+- Delete food items.
+- View customer orders.
+- Serve customer orders.
 
-### 1. Linked List
-Used to manage food items dynamically in three categories:
-- Breakfast
-- Lunch
-- Snacks
+### Student Module
 
-### 2. Stack
-Used to implement the shopping cart. Items are added using the Push operation and the last added item can be removed using the Pop operation.
+- Register and log in as a student.
+- View available food menus.
+- Select food items from different categories.
+- Add items to the shopping cart.
+- Undo the last cart action.
+- Remove specific items from the cart.
+- View cart details and calculate the total price.
+- Place food orders.
 
-### 3. Queue
-Used to manage customer orders following the First-In-First-Out (FIFO) principle.
+## Food Categories
 
-## 💾 File Handling
+| Category | Description |
+|---|---|
+| Breakfast | Manages breakfast items |
+| Lunch | Manages lunch items |
+| Snacks | Manages snacks |
 
-The system uses text files to store and retrieve information, including:
+## Data Structures Implemented
 
-- Food menu data
-- Admin credentials
-- Student credentials
-- Order history
+| Data Structure | Application |
+|---|---|
+| Linked List | Dynamically manages food items in different categories |
+| Stack | Implements shopping cart operations using LIFO |
+| Queue | Processes customer orders using FIFO |
 
-This allows important information to remain available between program executions.
+### Linked List
 
-## ⚙️ How the System Works
+Linked Lists are used to store and manage food items dynamically. Separate linked lists are maintained for Breakfast, Lunch, and Snacks.
 
-1. The program loads available food menu data from files.
-2. Users can register or log in as an administrator or student.
-3. Administrators manage food items and process orders.
-4. Students browse menus and add food items to their carts.
-5. Students place orders after reviewing their cart.
-6. Orders are added to a queue.
-7. Administrators serve orders in sequence.
+### Stack
 
-## ▶️ How to Run
+A Stack is used to implement the shopping cart. Items are added using the Push operation, and the last added item can be removed using the Pop operation.
 
-1. Download or clone this repository.
-2. Open the C source file using CodeBlocks or another C compiler.
-3. Compile and run the program.
-4. Register as an administrator or student to access the system.
+### Queue
 
-## 📂 Project Files
+A Queue is used to manage customer orders. Orders are added using Enqueue and served using Dequeue, following the First-In-First-Out (FIFO) principle.
 
-- [C Source Code](./cafeteria-management-system.c)
-- [Project Report (PDF)](./cafeteria-management-system_Report.pdf)
+## Software and Technologies
 
-## 🎯 Learning Objectives
+- Programming Language: C
+- Data Structures: Linked List, Stack, Queue
+- File Handling: Text file storage
+- Compiler: CodeBlocks
+- Operating System: Windows
 
-- Understand practical applications of data structures.
-- Implement linked lists, stacks, and queues in C.
-- Apply file handling for data storage.
-- Develop a menu-driven application.
-- Understand basic order management operations.
+## File Handling
 
-## 🔮 Future Improvements
+The system uses text files to store and retrieve information:
 
-- Add a graphical user interface (GUI).
+- `breakfast.txt` – Breakfast menu data.
+- `lunch.txt` – Lunch menu data.
+- `snacks.txt` – Snacks menu data.
+- `admin.txt` – Administrator credentials.
+- `student.txt` – Student credentials.
+- `orders.txt` – Order history.
+
+This allows menu information and other records to be stored between program executions.
+
+## How It Works
+
+1. The program loads the food menus from text files.
+2. Users can register or log in as administrators or students.
+3. Administrators can add, view, and delete food items.
+4. Students can browse the available food menus.
+5. Students can add food items to their shopping carts.
+6. The Stack manages cart operations.
+7. Students can review their carts and place orders.
+8. Orders are added to a Queue.
+9. Administrators can view and serve orders in FIFO order.
+10. Menu and order information is stored using file handling.
+
+## Testing
+
+The project was tested using different operations:
+
+- **Admin Access:** Tested adding and deleting food items, viewing menus, and managing orders.
+- **Student Access:** Tested viewing menus and adding or removing items from the cart.
+- **Order Processing:** Tested placing and serving orders.
+- **File Handling:** Verified menu updates and stored information.
+
+The project report describes successful execution of the major operations and FIFO-based order processing.
+
+## Limitations
+
+- Does not support multi-word food item names.
+- Stock is not fully restored when removing items from the cart.
+- Limited input validation in some operations.
+
+## Future Improvements
+
+- Develop a graphical user interface (GUI).
 - Improve input validation.
 - Implement a real-time database.
 - Add search and edit features.
+- Improve stock synchronization.
 
-## 👨‍💻 Author
+## Project Files
 
-**Md. Imran Hossen**
+- [C Source Code](./cafeteria-management-system.c) – Complete C implementation of the cafeteria management system.
+- [Project Report (PDF)](./cafeteria-management-system_Report.pdf) – Data Structure Lab project documentation.
+
+## Author
+
+**Developed by:** Ihkabbo
+
+Academic project focused on C programming, linked lists, stacks, queues, file handling, and practical applications of data structures.

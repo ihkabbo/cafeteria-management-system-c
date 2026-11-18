@@ -1,0 +1,3 @@
+imran 40
+imran 60
+imran1 20

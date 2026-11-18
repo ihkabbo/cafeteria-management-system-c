@@ -1,0 +1,12 @@
+Beef_Tehari 150 110
+Polaw 200 50
+Roast 200 70
+Fried_Rice 200 60
+Chili_Chicken 200 60
+Chicken_Fry 80 60
+Chicken_Curry 150 60
+Bhuna_Khicuri 150 50
+White_Rice 150 60
+Egg_Curry 50 25
+Ruhi_Fish_Curry 50 80
+All_Kind_of_Vorta 40 20

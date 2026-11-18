@@ -1,0 +1,6 @@
+Paratha 500 10
+Dal 100 20
+Mixed_Vegetable 100 20
+Egg_Fry 60 20
+Halua 40 20
+Bhuna_Khicuri 50 50

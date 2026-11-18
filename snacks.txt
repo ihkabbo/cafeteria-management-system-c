@@ -1,0 +1,9 @@
+Chicken_Roll 25 60
+Vegetable_Roll 25 30
+Hot_Dog 20 60
+Chicken_Burger 60 60
+Beef_Burger 30 80
+Naga_Burger 20 80
+Chicken_Sandwitch 20 40
+Reguler_Singara 70 10
+Chicker_Singara 50 20

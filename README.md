@@ -90,15 +90,14 @@ A Queue is used to manage customer orders. Orders are added using Enqueue and se
 
 The system uses text files to store and retrieve information:
 
-- `breakfast.txt` – Breakfast menu data.
-- `lunch.txt` – Lunch menu data.
-- `snacks.txt` – Snacks menu data.
-- `admin.txt` – Administrator credentials.
-- `student.txt` – Student credentials.
-- `orders.txt` – Order history.
+- [breakfast.txt](./breakfast.txt) – Breakfast menu data.
+- [lunch.txt](./lunch.txt) – Lunch menu data.
+- [snacks.txt](./snacks.txt) – Snacks menu data.
+- [admin.txt](./admin.txt) – Administrator credentials.
+- [student.txt](./student.txt) – Student credentials.
+- [orders.txt](./orders.txt) – Order history.
 
-This allows menu information and other records to be stored between program executions.
-
+These files allow the system to save and retrieve information between program executions.
 ## How It Works
 
 1. The program loads the food menus from text files.

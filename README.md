@@ -144,6 +144,6 @@ The project report describes successful execution of the major operations and FI
 
 ## Author
 
-**Developed by:** Ihkabbo
+**Developed by:** Md. Imran Hossen
 
 Academic project focused on C programming, linked lists, stacks, queues, file handling, and practical applications of data structures.
